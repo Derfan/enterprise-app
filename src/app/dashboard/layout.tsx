@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Dashboard({ children }: { children: ReactNode }) {
   return (
-    <div className="transition-all min-h-screen  flex flex-col md:p-6 lg:flex-row">
+    <div className="transition-all min-h-screen flex flex-col md:p-6 lg:flex-row">
       <Navigation />
 
       {children}

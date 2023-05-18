@@ -12,7 +12,7 @@ export const Navigation = () => (
     <NavItems />
 
     <Image
-      src="/avatar.png"
+      src="/image-avatar.png"
       className="transition-all border border-pure-white rounded-full w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 lg:mt-auto"
       width="24"
       height="24"
