@@ -6,14 +6,14 @@ module.exports = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    colors: {
-      red: "#FC4747",
-      "dark-blue": "#10141E",
-      "greyish-blue": "#5A698F",
-      "semi-dark-blue": "#161D2F",
-      "pere-white": "#FFFFFF",
-    },
     extend: {
+      colors: {
+        red: "#FC4747",
+        "dark-blue": "#10141E",
+        "greyish-blue": "#5A698F",
+        "semi-dark-blue": "#161D2F",
+        "pure-white": "#FFFFFF",
+      },
       screens: {
         lg: "1440px",
       },
