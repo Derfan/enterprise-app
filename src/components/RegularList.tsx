@@ -31,6 +31,7 @@ const RegularListItem = ({
     />
 
     <h4 className="text-sm font-medium mt-1">{title}</h4>
+
     <BookmarkButton
       isBookmarked={isBookmarked}
       className="absolute top-2 right-2"

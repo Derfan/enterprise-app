@@ -43,22 +43,18 @@ export const ScrollableList = ({
   title: string;
   entities: Entity[];
   className?: string;
-}) => {
-  return (
-    <div
-      className={cns(
-        "transition-all overflow-hidden mx-[-16px] md:mx-[-24px]",
-        className
-      )}
-    >
-      <h3 className="transition-all text-xl font-light px-4 md:px-6">
-        {title}
-      </h3>
-      <ul className="transition-all flex gap-6 mt-6 px-4 pb-3 w-full overflow-x-scroll whitespace-nowrap snap-x md:px-6">
-        {entities.map((item) => (
-          <ScrollableListItem key={item.title} {...item} />
-        ))}
-      </ul>
-    </div>
-  );
-};
+}) => (
+  <div
+    className={cns(
+      "transition-all overflow-hidden mx-[-16px] md:mx-[-24px]",
+      className
+    )}
+  >
+    <h3 className="transition-all text-xl font-light px-4 md:px-6">{title}</h3>
+    <ul className="transition-all flex gap-6 mt-6 px-4 pb-3 w-full overflow-x-scroll whitespace-nowrap snap-x md:px-6">
+      {entities.map((item) => (
+        <ScrollableListItem key={item.title} {...item} />
+      ))}
+    </ul>
+  </div>
+);
