@@ -28,7 +28,9 @@ export const SearchInput = ({
   }, [value, onChange]);
 
   return (
-    <label className={cns("flex items-center gap-x-4", className)}>
+    <label
+      className={cns("flex items-center gap-x-4 max-w-[540px]", className)}
+    >
       <Image
         src="/search.svg"
         className="w6 h-6"

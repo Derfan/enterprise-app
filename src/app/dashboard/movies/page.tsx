@@ -32,7 +32,7 @@ export default function Movies() {
   }, []);
 
   return (
-    <div className="px-4 pb-4 md:px-0">
+    <>
       <SearchInput
         className="mt-5"
         placeholder="Search for movies"
@@ -40,6 +40,6 @@ export default function Movies() {
       />
 
       <RegularList title={title} entities={filteredEntities} className="mt-5" />
-    </div>
+    </>
   );
 }

@@ -37,7 +37,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="transition-all px-4 pb-4 md:px-0">
+    <>
       <SearchInput
         className="mt-5"
         placeholder="Search for movies"
@@ -53,6 +53,6 @@ export default function Home() {
         entities={filteredEntities}
         className={cns({ "mt-3": !search }, { "mt-5": search })}
       />
-    </div>
+    </>
   );
 }

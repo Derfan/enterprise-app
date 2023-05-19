@@ -1,10 +1,17 @@
+import cns from "classnames";
 import Image from "next/image";
 import Link from "next/link";
 
 import { NavItems } from "./NavItems";
 
-export const Navigation = () => (
-  <nav className="transition-all flex items-center justify-between bg-semi-dark-blue px-4 py-[18px] md:rounded-[10px] md:px-6 lg:flex-col lg:justify-start lg:pt-9 lg:px-7 lg:pb-8">
+export const Navigation = ({ className = "" }: { className?: string }) => (
+  <nav
+    className={cns(
+      "transition-all flex items-center justify-between bg-semi-dark-blue px-4 py-[18px] md:rounded-[10px] md:px-6 lg:flex-col lg:justify-start lg:pt-9 lg:px-7 lg:pb-8",
+      "lg:fixed lg:left-6 lg:inset-y-6 lg:min-h-[490px]",
+      className
+    )}
+  >
     <Link href="/dashboard/home">
       <Image src="/logo.svg" width="33" height="27" alt="App Logo" priority />
     </Link>

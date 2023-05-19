@@ -31,7 +31,7 @@ export default function Bookmarkes() {
   }, []);
 
   return (
-    <div className="px-4 pb-4 md:px-0">
+    <>
       <SearchInput
         className="mt-5"
         placeholder="Search for bookmarked shows"
@@ -59,6 +59,6 @@ export default function Bookmarkes() {
           />
         </>
       )}
-    </div>
+    </>
   );
 }
