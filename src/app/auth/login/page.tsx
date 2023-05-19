@@ -13,6 +13,8 @@ export default function Login() {
 
   const onSubmit = async (formData: typeof defaultValues) => {
     console.log(formData);
+
+    window.location.href = "/dashboard/home";
   };
 
   return (

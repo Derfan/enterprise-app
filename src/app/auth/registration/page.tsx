@@ -13,6 +13,8 @@ export default function Login() {
 
   const onSubmit = async ({ email, password }: typeof defaultValues) => {
     console.log({ email, password });
+
+    window.location.href = "/dashboard/home";
   };
 
   return (
