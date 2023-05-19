@@ -5,6 +5,7 @@ import Image from "next/image";
 import { Entity } from "@/types";
 import { BookmarkButton } from "./BookmarkButton";
 import { AdditionalInfo } from "./AdditionalInfo";
+import { PlayOverlay } from "./PlayOverlay";
 
 const RegularListItem = ({
   title,
@@ -14,14 +15,18 @@ const RegularListItem = ({
   rating,
   isBookmarked,
 }: Entity) => (
-  <li className="relative">
-    <Image
-      src={thumbnail.regular.large}
-      className="rounded-lg w-full"
-      width="164"
-      height="110"
-      alt={title}
-    />
+  <li className="group cursor-pointer relative">
+    <div className="relative">
+      <Image
+        src={thumbnail.regular.large}
+        className="rounded-lg w-full"
+        width="164"
+        height="110"
+        alt={title}
+      />
+
+      <PlayOverlay className="opacity-0 group-hover:opacity-100" />
+    </div>
 
     <AdditionalInfo
       year={year}

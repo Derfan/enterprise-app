@@ -4,6 +4,7 @@ import cns from "classnames";
 import { Entity } from "@/types";
 import { BookmarkButton } from "./BookmarkButton";
 import { AdditionalInfo } from "./AdditionalInfo";
+import { PlayOverlay } from "./PlayOverlay";
 
 const ScrollableListItem = ({
   thumbnail,
@@ -13,7 +14,7 @@ const ScrollableListItem = ({
   rating,
   isBookmarked,
 }: Entity) => (
-  <li className="relative snap-center">
+  <li className="group cursor-pointer relative snap-center">
     <Image
       src={thumbnail.trending?.large as string}
       className="trransition-all w-[60vw] max-w-[470px] h-auto rounded-lg"
@@ -21,6 +22,8 @@ const ScrollableListItem = ({
       height="140"
       alt={title}
     />
+
+    <PlayOverlay className="opacity-0 group-hover:opacity-100" />
 
     <BookmarkButton
       isBookmarked={isBookmarked}
