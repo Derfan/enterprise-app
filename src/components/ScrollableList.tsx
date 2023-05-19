@@ -14,7 +14,7 @@ const ScrollableListItem = ({
   rating,
   isBookmarked,
 }: Entity) => (
-  <li className="group cursor-pointer relative snap-center">
+  <li className="group cursor-pointer relative snap-center max-h-[230px]">
     <Image
       src={thumbnail.trending?.large as string}
       className="trransition-all w-[60vw] max-w-[470px] h-auto rounded-lg"
