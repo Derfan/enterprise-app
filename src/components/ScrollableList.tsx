@@ -21,6 +21,7 @@ const ScrollableListItem = ({
       width="240"
       height="140"
       alt={title}
+      priority
     />
 
     <PlayOverlay className="opacity-0 group-hover:opacity-100" />

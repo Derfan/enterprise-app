@@ -20,6 +20,7 @@ export const NavItem = ({
       <Link
         href={href}
         className={cns("group", { "pointer-events-none": isActive })}
+        aria-label={`Go to ${href} page`}
       >
         <Icon
           className={cns(

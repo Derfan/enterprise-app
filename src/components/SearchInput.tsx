@@ -44,7 +44,7 @@ export const SearchInput = ({
       <input
         type="search"
         name="search"
-        className="cursor-pointer transition outline-0 text-md font-light placeholder-pure-white/50 caret-red bg-transparent w-full py-[10px] border-b border-b-transparent focus-visible:border-b-pure-white group-hover:border-b-greyish-blue"
+        className="cursor-pointer transition outline-none text-md font-light placeholder-pure-white/50 caret-red bg-transparent w-full py-[10px] border-b border-b-transparent focus-visible:border-b-pure-white group-hover:border-b-greyish-blue"
         placeholder={placeholder}
         value={value}
         onChange={handleChange}
