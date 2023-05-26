@@ -55,7 +55,11 @@ export const RegularList = ({
 }) => (
   <div className={className}>
     <h3 className="text-xl font-light">{title}</h3>
-    <ul className={"grid grid-cols-2 gap-4 mt-6 md:grid-cols-3 lg:grid-cols-4"}>
+    <ul
+      className={
+        "grid grid-cols-2 gap-4 mt-6 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6"
+      }
+    >
       {entities.map((item) => (
         <RegularListItem key={item.title} {...item} />
       ))}
